@@ -1,0 +1,9 @@
+export const CREATE_MOVIE = 'CREATE_MOVIE';
+export const THEATER_MOVIES = 'THEATER_MOVIES'
+export const ALL_MOVIES = 'ALL_MOVIES'
+export const LIGHT_INFORMATION = 'LIGHT_INFORMATION'
+export const CREATE_CARD = 'CREATE_CARD'
+export const NAV_THEATER_NUMBER = 'NAV_THATER_NUMBER'
+export const ALL_POSTERS = 'ALL_POSTERS'
+export const UPDATER = 'UPDATER'
+

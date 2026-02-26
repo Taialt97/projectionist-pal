@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: projectionist-pal
+    runtime: node
+    buildCommand: npm install --legacy-peer-deps && npm run build
+    startCommand: node index.js
+    envVars:
+      - key: NODE_ENV
+        value: production
