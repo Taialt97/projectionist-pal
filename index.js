@@ -18,12 +18,11 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json({ type: "json" }));
 
 // ------------------------------ Static files
-app.use(express.static("./public"));
+// Serve React build first (has compiled index.html)
+app.use(express.static(path.join(__dirname, "build")));
+// Serve uploaded files and public assets
 app.use("/public", express.static("public"));
 app.use("/uploads", express.static("uploads"));
-
-// Serve React build in production
-app.use(express.static(path.join(__dirname, "build")));
 
 // ------------------------------ Multer Set storage engine
 const storage = multer.diskStorage({
